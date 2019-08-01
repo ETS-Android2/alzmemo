@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.main.alz2.RegisterActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username (Email)"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView11"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:background="@drawable/rect"
+            android:textSize="16dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:id="@+id/textView12"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="@drawable/rect"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/textView13"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:hint="First Name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect"
+            android:textSize="16dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mname"
+            android:hint="Middle Name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect"
+            android:textSize="16dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:hint="Last Name"
+            android:background="@drawable/rect"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Device Name"
+            android:id="@+id/textView14"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect"
+            android:id="@+id/bluetooth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you registering as a patient?"
+            android:id="@+id/textView15"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isPatient"
+            android:textOn="Yes"
+            android:textOff="No"
+            android:checked="false" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/emptygallery" />
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/btnrequest"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:id="@+id/button2"
+            android:onClick="registerStart" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

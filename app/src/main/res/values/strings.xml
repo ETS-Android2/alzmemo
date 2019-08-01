@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Alz2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_relation">RelationActivity</string>
+    <string-array name="relation_types">
+        <item>Patient</item>
+        <item>Relative</item>
+    </string-array>
+    <string name="title_activity_memory_main">MemoryMain</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <item name="IMAGE_NUM" type="id" />
+    <item name="IMAGE_NAME" type="id" />
+
+
+    <string-array name="reminder_array">
+        <item>On time</item>
+        <item>1 min before</item>
+        <item>5 mins before</item>
+        <item>10 mins before</item>
+        <item>15 mins before</item>
+        <item>20 mins before</item>
+        <item>25 mins before</item>
+        <item>30 mins before</item>
+        <item>45 mins before</item>
+        <item>1 hour before</item>
+        <item>2 hours before</item>
+        <item>3 hours before</item>
+        <item>12 hours before</item>
+        <item>1 day before</item>
+        <item>2 days before</item>
+        <item>1 week before</item>
+    </string-array>
+
+
+</resources>

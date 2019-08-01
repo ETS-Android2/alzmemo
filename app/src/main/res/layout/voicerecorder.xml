@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.main.alz2.VoiceRecord" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Recording Point: -"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/micImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/iconrecord" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/micImage"
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp">
+
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/btnstop"/>
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btnrecord"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnuploadrecord"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/playnew"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text=" PLAY"
+            android:textSize="20dp"
+            android:background="@drawable/btnno"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/stopPlayNew"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:background="@drawable/btnno"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/playnew"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="play preview"
+            android:background="@drawable/btnno"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/stopPlayNew"/>
+
+        <!--<Button
+            android:id="@+id/stopPlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="stop preview"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/play"
+            android:background="@drawable/btnno"
+            android:layout_alignParentBottom="true"/>-->
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="90dp"
+        android:paddingTop="12dp"
+        android:background="#837d7d"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="WED"
+            android:id="@+id/weekdayText"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="30"
+            android:id="@+id/dateText"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/sub"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:text="Description"
+    android:textSize="16sp"
+        android:layout_marginLeft="100dp" />
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/sub"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignWithParentIfMissing="true"
+    android:gravity="center_vertical"
+    android:text="Example application"
+    android:textSize="20sp"
+    android:layout_marginLeft="100dp" />
+
+</RelativeLayout>

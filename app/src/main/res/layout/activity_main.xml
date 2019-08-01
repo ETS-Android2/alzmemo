@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".app.HomeActivity"
+    android:weightSum="1">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/config"
+            android:id="@+id/button"
+            android:onClick="updateServer"
+            android:layout_gravity="right"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:id="@+id/imageView"
+            android:background="@drawable/iconlogin"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center|top" />
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|bottom"
+            tools:ignore="UselessParent"
+            android:color="#66FF0000"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUsername"
+                android:color="#66FF0000"
+                android:hint="Username"
+                android:background="@drawable/rect"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/icon_username"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="naprid@gmail.com" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPassword"
+                android:layout_gravity="top"
+                android:color="#66FF0000"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/icon_password"
+                android:background="@drawable/rect"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text="admin" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Sign in"
+                android:background="@drawable/btnsignup"
+                android:onClick="startLogin" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:text="Dont have an account?"
+                    android:textSize="14dp"
+                    android:id="@+id/textView2" />
+
+                <Button
+                    android:layout_width="114dp"
+                    android:layout_height="37dp"
+                    android:text="Register"
+                    android:id="@+id/btnRegister"
+                    android:textColor="#00a79d"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="openRegistration"
+                    android:background="@drawable/btnregister"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

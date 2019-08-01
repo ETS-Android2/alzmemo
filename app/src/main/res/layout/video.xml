@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.main.alz2.Video">
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:layout_marginBottom="200dp"
+        android:id="@+id/deleteBtn"
+        android:background="@drawable/btndelete"
+        android:textColor="#34495e"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7f8c8d"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:id="@+id/VideoView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/txt_font"
+            android:textSize="30dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/browseBtn"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btnbrowsevideo"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadBtn"
+            android:background="@drawable/btnuploadvideo"
+            android:onClick="upload"
+            android:textColor="#34495e"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/browseBtn" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoBtn"
+            android:background="@drawable/btntakevideo"
+            android:textColor="#34495e"
+            android:layout_toRightOf="@+id/uploadBtn"/>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

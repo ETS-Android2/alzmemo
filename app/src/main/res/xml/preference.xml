@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <PreferenceCategory
+        android:key="pref_key_user_details"
+        android:title="User Details">
+
+        <Preference
+            android:key="username"
+            android:summary="This is your username (not editable)"
+            android:title="Username" />
+
+        <Preference
+            android:key="user_id"
+            android:summary="This is your User ID (not editable)"
+            android:title="User ID " />
+
+        <EditTextPreference
+            android:key="password"
+            android:summary="Edit your password here"
+            android:title="Password"></EditTextPreference>
+
+        <EditTextPreference
+            android:key="first_name"
+            android:summary="Edit your First name here"
+            android:title="First Name"></EditTextPreference>
+
+        <EditTextPreference
+            android:key="middle_name"
+            android:summary="Edit your Middle name here"
+            android:title="Middle Name"></EditTextPreference>
+
+        <EditTextPreference
+            android:key="last_name"
+            android:summary="Edit your Last name here"
+            android:title="Last Name"></EditTextPreference>
+
+        <EditTextPreference
+            android:key="bluetooth_handle"
+            android:summary="Edit your bluetooth handle here"
+            android:title="Bluetooth Handle"></EditTextPreference>
+
+        <Preference
+            android:key="user_type"
+            android:summary="This is your User Type (not editable)"
+            android:title="user_type" />
+
+        <Preference
+            android:title="This acts like a button"
+            android:key="button"
+            android:summary="Will act like a button"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+

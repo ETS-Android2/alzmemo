@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main.alz2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".UserInfoActivity" />
+        <activity android:name=".UserProfilePic" />
+        <activity
+            android:name=".RelationActivity"
+            android:label="@string/title_activity_relation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RelationForm" />
+        <activity android:name=".RelationAdd" />
+        <activity android:name=".MemoryAlbum" />
+        <activity android:name=".MemoryMain" />
+        <activity android:name=".MemoryUpload" />
+        <activity android:name=".MemoryEdit" />
+        <activity android:name=".VoiceRecord" />
+        <activity android:name=".Video" />
+        <activity android:name=".EventSummary" />
+        <activity
+            android:name=".EventActivity"
+            android:label="User Events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EventForm" />
+
+        <service android:name=".PatientBluetooth">
+            <action android:name="android.bluetooth.adapter.action.ACTION_FOUND" />
+            <action android:name="android.bluetooth.adapter.action.ACTION_DISCOVERY_FINISHED" />
+        </service>
+
+        <receiver android:name=".BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.ACTION_FOUND" />
+                <action android:name="android.bluetooth.adapter.action.ACTION_DISCOVERY_FINISHED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".RememberActivity" />
+        <activity android:name=".RegisterActivity"></activity>
+
+        <service android:name=".EventService"></service>
+    </application>
+
+</manifest>

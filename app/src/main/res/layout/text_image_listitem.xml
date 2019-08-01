@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants"
+android:padding="6dip">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="#afabab"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/emptygallery" />
+
+<TextView
+    android:id="@+id/sub"
+    android:layout_width="fill_parent"
+    android:layout_height="26dip"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_toRightOf="@+id/imageView"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:text="Description"
+    android:textSize="12sp" />
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="25dip"
+    android:layout_above="@id/sub"
+    android:layout_alignParentRight="true"
+    android:layout_toRightOf="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:layout_alignWithParentIfMissing="true"
+    android:gravity="center_vertical"
+    android:text="Example application"
+    android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/thumbnail"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>
